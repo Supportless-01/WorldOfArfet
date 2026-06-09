@@ -1,6 +1,6 @@
 @extends('layouts.game')
 
-@section('title', 'Street Crimes - Underworld City')
+@section('title', 'Bandits Den — World of Arfet')
 
 @section('styles')
 <style>
@@ -59,7 +59,8 @@
 
 @section('content')
 <h2 class="panel-header">Location: Thieves' Quarter</h2>
-<p>The alleyways are shadowed and ripe with unwary merchants. Spend your Resolve here to pilfer coin and strengthen your standing among the guild.</p>
+<p>The alleyways are shadowed and ripe with unwary merchants. Spend your Resolve here to pilfer coin and strengthen your
+    standing among the guild.</p>
 
 <!-- Feedback Alerts -->
 @if (session('success'))
@@ -73,7 +74,8 @@
 <div class="crime-box">
     <div>
         <b style="color: #f5c97b; font-size: 13px;">Lift a Merchant's Pouch</b><br>
-        <span style="color:#d2c0a7;">Consumes 2 Resolve. A quick grab for coin that keeps you hidden from the city watch.</span>
+        <span style="color:#d2c0a7;">Consumes 2 Resolve. A quick grab for coin that keeps you hidden from the city
+            watch.</span>
     </div>
     <form method="POST" action="{{ route('crimes.shoplift') }}">
         @csrf

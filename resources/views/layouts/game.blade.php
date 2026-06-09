@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title', 'Underworld City')</title>
+    <title>@yield('title', 'World of Arfet')</title>
     <style>
         body {
             background-color: #120f08;

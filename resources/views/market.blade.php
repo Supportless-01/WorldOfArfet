@@ -1,6 +1,6 @@
 @extends('layouts.game')
 
-@section('title', 'Bazaar of Shadows - Underworld City')
+@section('title', 'Market Square - The World of Arfet')
 
 @section('styles')
 <style>
@@ -84,7 +84,8 @@
 
 @section('content')
 <h2 class="panel-header">Location: Bazaar of Shadows</h2>
-<p>Secret traders peddle rare gear and forbidden tinctures. Spend your coin to arm yourself with enchanted blades, stout armor, and useful provisions.</p>
+<p>Secret traders peddle rare gear and forbidden tinctures. Spend your coin to arm yourself with enchanted blades, stout
+    armor, and useful provisions.</p>
 
 <!-- Feedback Alerts -->
 @if (session('success'))

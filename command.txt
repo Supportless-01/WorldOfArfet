@@ -14,3 +14,10 @@ composer install --no-dev --optimize-autoloader
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
+
+
+
+# Update Git
+1 git add .
+2. git commit -m "text"
+3. git push origin main

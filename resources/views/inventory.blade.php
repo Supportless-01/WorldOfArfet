@@ -1,6 +1,6 @@
 @extends('layouts.game')
 
-@section('title', 'Adventurer\'s Satchel - Underworld City')
+@section('title', 'Adventurer\'s Satchel - The World of Arfet')
 
 @section('styles')
 <style>

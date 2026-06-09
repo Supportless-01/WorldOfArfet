@@ -1,6 +1,6 @@
 @extends('layouts.game')
 
-@section('title', 'Local Gym - Underworld City')
+@section('title', 'Training Yard — World of Arfet')
 
 @section('styles')
 <style>
@@ -60,7 +60,8 @@
 
 @section('content')
 <h2 class="panel-header">Location: Oakwood Training Grounds</h2>
-<p>The field is lined with timber logs and old iron anchors. Spend your Stamina here to temper your body for battle and sharpen your combat prowess.</p>
+<p>The field is lined with timber logs and old iron anchors. Spend your Stamina here to temper your body for battle and
+    sharpen your combat prowess.</p>
 
 @if (session('success'))
 <div class="msg msg-success"><strong>Trainer's Notice:</strong> {{ session('success') }}</div>
@@ -72,7 +73,8 @@
 <div class="gym-box">
     <div>
         <b style="color: #f5c97b; font-size: 13px;">Hammer & Anvil Drills</b><br>
-        <span style="color:#d2c0a7;">Spend 10 Stamina to harden your limbs, brace your guard, and steady your breath for the coming fight.</span>
+        <span style="color:#d2c0a7;">Spend 10 Stamina to harden your limbs, brace your guard, and steady your breath for
+            the coming fight.</span>
     </div>
     <form method="POST" action="{{ route('gym.train') }}">
         @csrf

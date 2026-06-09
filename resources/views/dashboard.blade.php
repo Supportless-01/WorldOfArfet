@@ -1,6 +1,6 @@
 @extends('layouts.game')
 
-@section('title', 'City Ledger - Underworld City')
+@section('title', 'Gilded Hall — World of Arfet')
 
 @section('content')
 <h2 class="panel-header">Location: The Gilded Hall</h2>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Underworld City — Step Into the Shadows</title>
+    <title>The World of Arfet</title>
     <style>
         body {
             background-color: #130f08;
@@ -161,8 +161,8 @@
 
                 @if (Route::has('login'))
                 @auth
-                <a href="{{ url('/dashboard') }}" class="menu-link"
-                    style="color: #d9b871; border-color: #8b6f4f;">ENTER THE REALM</a>
+                <a href="{{ url('/dashboard') }}" class="menu-link" style="color: #d9b871; border-color: #8b6f4f;">ENTER
+                    THE REALM</a>
                 @else
                 <a href="/login" class="menu-link">ENTER THE COURT</a>
                 @if (Route::has('register'))
