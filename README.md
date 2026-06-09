@@ -1,6 +1,6 @@
 ## About The World Of Arfet
 
-The World Of Arfet is a project that Supp0rtl3ss though for over 3 years.
+The World Of Arfet is a project that Supp0rtl3ss thought for over 3 years.
 
 ## Contributing
 
