@@ -1,6 +1,7 @@
 ## About The World Of Arfet
 
 The World Of Arfet is a project that Supp0rtl3ss thought for over 3 years.
+If you wanna join the community, join the discord! https://discord.gg/eaKQbDpqHu
 
 ## Contributing
 
@@ -12,7 +13,7 @@ soon
 
 ## Security Vulnerabilities
 
-soon
+For any bug or vulnerabilities you find send it in the discord.
 
 ## License
 
