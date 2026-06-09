@@ -1,0 +1,16 @@
+Start Server - php artisan serve
+5 minute timer - php artisan schedule:work
+
+update - php artisan migrate 
+
+
+# Install or update backend dependencies
+composer install --no-dev --optimize-autoloader
+
+
+
+
+# Clear and optimize your configurations
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
