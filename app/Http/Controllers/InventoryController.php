@@ -117,10 +117,10 @@ class InventoryController extends Controller
             return redirect()->back()->with('error', 'Player account not found.');
         }
 
-        if (str_contains($targetItem['stat_name'], 'Nerve')) {
-            $user->nerve = $user->nerve + $targetItem['stat_value'];
+        if (str_contains($targetItem['stat_name'], 'Nerve') || str_contains($targetItem['stat_name'], 'Resolve')) {
+            $user->nerve = min(10, $user->nerve + $targetItem['stat_value']);
         } elseif (str_contains($targetItem['stat_name'], 'Energy')) {
-            $user->energy = $user->energy + $targetItem['stat_value'];
+            $user->energy = min(100, $user->energy + $targetItem['stat_value']);
         }
 
         $user->save();
