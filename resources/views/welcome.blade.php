@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The World of Arfet</title>
+    <title>THE WORLD OF ARFET</title>
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         body {
             background-color: #130f08;
             background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
@@ -17,11 +22,91 @@
         }
 
         .main-table {
-            width: 780px;
+            height: calc(100vh - 40px);
+            width: min(920px, calc(100vw - 40px));
+            max-width: 920px;
             margin: 0 auto;
             background-color: #2f2519;
             border: 4px solid #5d422a;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .mini-sidebar {
+            width: 140px;
+            background-color: #2e1f13;
+            vertical-align: top;
+            padding: 12px;
+            border-right: 3px solid #4e3927;
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.35);
+            height: 100%;
+        }
+
+        .mini-panel-title {
+            background: linear-gradient(180deg, #6d4b24 0%, #4b3217 100%);
+            color: #f1d3a0;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 10px;
+            margin-bottom: 12px;
+            border: 1px solid #6f502f;
+            text-align: center;
+        }
+
+        .mini-panel-text {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #e7d5b0;
+            margin-bottom: 14px;
+        }
+
+        .mini-panel-text strong {
+            color: #f8e6b4;
+        }
+
+        .mini-panel-button {
+            display: block;
+            width: 100%;
+            padding: 9px 10px;
+            margin-top: 6px;
+            border-radius: 4px;
+            border: 1px solid #7d5b2f;
+            background: linear-gradient(180deg, #6c4a1e 0%, #553915 100%);
+            color: #f2d59a;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .mini-panel-button:hover {
+            background: linear-gradient(180deg, #7a5525 0%, #62421c 100%);
+        }
+
+        .mini-panel-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mini-panel-links li {
+            margin-bottom: 8px;
+        }
+
+        .mini-panel-link {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+            padding: 8px 10px;
+            color: #e7d1a6;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .mini-panel-link:hover {
+            background-color: rgba(255, 255, 255, 0.07);
+            color: #fff1cb;
         }
 
         .banner {
@@ -36,8 +121,8 @@
         .banner h1 {
             color: #e5b95b;
             font-family: "Goudy Old Style", Georgia, serif;
-            font-size: 40px;
-            letter-spacing: 2px;
+            font-size: 46px;
+            letter-spacing: 4px;
             margin: 0;
             text-transform: uppercase;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
@@ -52,11 +137,12 @@
         }
 
         .sidebar {
-            width: 180px;
+            width: 170px;
             background-color: #2a1f14;
             vertical-align: top;
             padding: 12px;
             border-right: 3px solid #4e3927;
+            height: 100%;
         }
 
         .sidebar-right {
@@ -64,6 +150,7 @@
             border-left: 3px solid #4e3927;
             width: 180px;
             background-color: #2a1f14;
+            height: 100%;
         }
 
         .box-title {
@@ -106,14 +193,8 @@
             color: #f3e4cd;
             border-left: 3px solid #4e3927;
             border-right: 3px solid #4e3927;
-        }
-
-        .welcome-header {
-            color: #f0d88e;
-            font-size: 18px;
-            border-bottom: 1px solid #5c472f;
-            padding-bottom: 6px;
-            margin-top: 0;
+            height: 100%;
+            min-height: 100%;
         }
 
         .news-item {
@@ -148,12 +229,27 @@
 
         <!-- ROW 1: Banner Block Section -->
         <tr>
-            <td colspan="3" class="banner">
-                <h1>The World of Arfet</h1>
+            <td colspan="4" class="banner">
+                <h1>THE WORLD OF ARFET</h1>
                 <p>--- A DARK FANTASY REALM OF ROGUES AND ROGUERY ---</p>
-
-                <!-- ROW 2: Core Three-Column Split Configuration -->
+            </td>
+        </tr>
         <tr>
+
+            <!-- MINI NEWS PANEL -->
+            <td class="mini-sidebar">
+                <div class="mini-panel-title">News & Alerts</div>
+                <div class="mini-panel-text">
+                    <p><strong>Update:</strong> Added News and Alerts section.</p>
+                    <p><strong>Tip:</strong> Check the market before buying gear.</p>
+                </div>
+                <div class="mini-panel-title" style="margin-top: 18px;">Quick Links</div>
+                <ul class="mini-panel-links">
+                    <li><a href="#" class="mini-panel-link">• Latest Patch Notes</a></li>
+                    <li><a href="#" class="mini-panel-link">• Server Rules</a></li>
+                    <li><a href="#" class="mini-panel-link">• Support</a></li>
+                </ul>
+            </td>
 
             <!-- COLUMN 1: LEFT NAVIGATION SIDEBAR -->
             <td class="sidebar">
@@ -226,7 +322,7 @@
 
         <!-- ROW 3: Page Footnotes Disclaimer Section -->
         <tr>
-            <td colspan="3" class="footer">
+            <td colspan="4" class="footer">
                 Copyright &copy; 2026 The World of Arfet Net. All Rights Reserved.
             </td>
         </tr>

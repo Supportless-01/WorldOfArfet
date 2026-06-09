@@ -10,9 +10,9 @@
     style="border: 1px solid #493926; padding: 14px; margin-top: 20px; border-radius: 8px; background: rgba(16, 11, 6, 0.95);">
     <tr>
         <td>
-            <span style="color:#d9b871; font-weight:bold;">Guild Notice:</span> The city ledger is still being scribed.
-            Some passages may be unfinished, and the watchmen are still tuning the quarters. Stay vigilant and share any
-            rumors you uncover.
+            <span style="color:#d9b871; font-weight:bold;">System Notice:</span> The game is still in development.
+            Expect regular updates, new features, and exciting content as we build the world of Arfet together. Your
+            feedback is invaluable in shaping the future of the game.
         </td>
     </tr>
 </table>
