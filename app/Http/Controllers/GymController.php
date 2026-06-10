@@ -26,10 +26,11 @@ class GymController extends Controller
             return redirect()->back()->with('error', 'You do not have enough energy to train!');
         }
 
+        $xpGain = 12;
         $user->energy = $user->energy - $energyCost;
         $user->strength = $user->strength + $strengthGain;
+        $user->gainXp($xpGain);
 
-        $user->save();
-        return redirect()->back()->with('success', "You hit the gym weights! Spent {$energyCost} Energy and gained +{$strengthGain} Strength.");
+        return redirect()->back()->with('success', "You hit the gym weights! Spent {$energyCost} Energy, gained +{$strengthGain} Strength, and earned +{$xpGain} XP.");
     }
 }

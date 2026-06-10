@@ -31,6 +31,12 @@ class UserFactory extends Factory
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
             'life' => 100,
+            'energy' => 100,
+            'money' => 500,
+            'nerve' => 10,
+            'strength' => 10,
+            'level' => 1,
+            'xp' => 0,
         ];
     }
 

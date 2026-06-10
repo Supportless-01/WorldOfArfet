@@ -5,220 +5,220 @@
     <meta charset="UTF-8">
     <title>THE WORLD OF ARFET</title>
     <style>
-        html,
-        body {
-            height: 100%;
-        }
+    html,
+    body {
+        height: 100%;
+    }
 
-        body {
-            background-color: #130f08;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-            background-size: 100% 4px;
-            color: #f1dcc0;
-            font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-            font-size: 13px;
-            margin: 0;
-            padding: 20px;
-        }
+    body {
+        background-color: #130f08;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 100% 4px;
+        color: #f1dcc0;
+        font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-size: 13px;
+        margin: 0;
+        padding: 20px;
+    }
 
-        .main-table {
-            height: calc(100vh - 40px);
-            width: min(920px, calc(100vw - 40px));
-            max-width: 920px;
-            margin: 0 auto;
-            background-color: #2f2519;
-            border: 4px solid #5d422a;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-        }
+    .main-table {
+        height: calc(100vh - 40px);
+        width: min(920px, calc(100vw - 40px));
+        max-width: 920px;
+        margin: 0 auto;
+        background-color: #2f2519;
+        border: 4px solid #5d422a;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
 
-        .mini-sidebar {
-            width: 140px;
-            background-color: #2e1f13;
-            vertical-align: top;
-            padding: 12px;
-            border-right: 3px solid #4e3927;
-            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.35);
-            height: 100%;
-        }
+    .mini-sidebar {
+        width: 140px;
+        background-color: #2e1f13;
+        vertical-align: top;
+        padding: 12px;
+        border-right: 3px solid #4e3927;
+        box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.35);
+        height: 100%;
+    }
 
-        .mini-panel-title {
-            background: linear-gradient(180deg, #6d4b24 0%, #4b3217 100%);
-            color: #f1d3a0;
-            font-weight: bold;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 8px 10px;
-            margin-bottom: 12px;
-            border: 1px solid #6f502f;
-            text-align: center;
-        }
+    .mini-panel-title {
+        background: linear-gradient(180deg, #6d4b24 0%, #4b3217 100%);
+        color: #f1d3a0;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        margin-bottom: 12px;
+        border: 1px solid #6f502f;
+        text-align: center;
+    }
 
-        .mini-panel-text {
-            font-size: 12px;
-            line-height: 1.6;
-            color: #e7d5b0;
-            margin-bottom: 14px;
-        }
+    .mini-panel-text {
+        font-size: 12px;
+        line-height: 1.6;
+        color: #e7d5b0;
+        margin-bottom: 14px;
+    }
 
-        .mini-panel-text strong {
-            color: #f8e6b4;
-        }
+    .mini-panel-text strong {
+        color: #f8e6b4;
+    }
 
-        .mini-panel-button {
-            display: block;
-            width: 100%;
-            padding: 9px 10px;
-            margin-top: 6px;
-            border-radius: 4px;
-            border: 1px solid #7d5b2f;
-            background: linear-gradient(180deg, #6c4a1e 0%, #553915 100%);
-            color: #f2d59a;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-        }
+    .mini-panel-button {
+        display: block;
+        width: 100%;
+        padding: 9px 10px;
+        margin-top: 6px;
+        border-radius: 4px;
+        border: 1px solid #7d5b2f;
+        background: linear-gradient(180deg, #6c4a1e 0%, #553915 100%);
+        color: #f2d59a;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
 
-        .mini-panel-button:hover {
-            background: linear-gradient(180deg, #7a5525 0%, #62421c 100%);
-        }
+    .mini-panel-button:hover {
+        background: linear-gradient(180deg, #7a5525 0%, #62421c 100%);
+    }
 
-        .mini-panel-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .mini-panel-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        .mini-panel-links li {
-            margin-bottom: 8px;
-        }
+    .mini-panel-links li {
+        margin-bottom: 8px;
+    }
 
-        .mini-panel-link {
-            display: block;
-            background-color: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 4px;
-            padding: 8px 10px;
-            color: #e7d1a6;
-            text-decoration: none;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
+    .mini-panel-link {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 4px;
+        padding: 8px 10px;
+        color: #e7d1a6;
+        text-decoration: none;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
 
-        .mini-panel-link:hover {
-            background-color: rgba(255, 255, 255, 0.07);
-            color: #fff1cb;
-        }
+    .mini-panel-link:hover {
+        background-color: rgba(255, 255, 255, 0.07);
+        color: #fff1cb;
+    }
 
-        .banner {
-            background: linear-gradient(180deg, #392510 0%, #1f150a 100%);
-            border-bottom: 3px solid #5f4226;
-            padding: 18px;
-            text-align: center;
-            color: #f7d9a4;
-            font-family: "Goudy Old Style", Georgia, serif;
-        }
+    .banner {
+        background: linear-gradient(180deg, #392510 0%, #1f150a 100%);
+        border-bottom: 3px solid #5f4226;
+        padding: 18px;
+        text-align: center;
+        color: #f7d9a4;
+        font-family: "Goudy Old Style", Georgia, serif;
+    }
 
-        .banner h1 {
-            color: #e5b95b;
-            font-family: "Goudy Old Style", Georgia, serif;
-            font-size: 46px;
-            letter-spacing: 4px;
-            margin: 0;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
+    .banner h1 {
+        color: #e5b95b;
+        font-family: "Goudy Old Style", Georgia, serif;
+        font-size: 46px;
+        letter-spacing: 4px;
+        margin: 0;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    }
 
-        .banner p {
-            color: #e3d1a1;
-            font-weight: bold;
-            font-size: 12px;
-            margin: 6px 0 0 0;
-            letter-spacing: 1px;
-        }
+    .banner p {
+        color: #e3d1a1;
+        font-weight: bold;
+        font-size: 12px;
+        margin: 6px 0 0 0;
+        letter-spacing: 1px;
+    }
 
-        .sidebar {
-            width: 170px;
-            background-color: #2a1f14;
-            vertical-align: top;
-            padding: 12px;
-            border-right: 3px solid #4e3927;
-            height: 100%;
-        }
+    .sidebar {
+        width: 170px;
+        background-color: #2a1f14;
+        vertical-align: top;
+        padding: 12px;
+        border-right: 3px solid #4e3927;
+        height: 100%;
+    }
 
-        .sidebar-right {
-            border-right: none;
-            border-left: 3px solid #4e3927;
-            width: 180px;
-            background-color: #2a1f14;
-            height: 100%;
-        }
+    .sidebar-right {
+        border-right: none;
+        border-left: 3px solid #4e3927;
+        width: 180px;
+        background-color: #2a1f14;
+        height: 100%;
+    }
 
-        .box-title {
-            background: linear-gradient(180deg, #5b3d23 0%, #351e0f 100%);
-            color: #f1ddb7;
-            font-weight: bold;
-            font-size: 12px;
-            padding: 7px 8px;
-            border: 1px solid #7a5c3e;
-            text-align: center;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
-        }
+    .box-title {
+        background: linear-gradient(180deg, #5b3d23 0%, #351e0f 100%);
+        color: #f1ddb7;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 7px 8px;
+        border: 1px solid #7a5c3e;
+        text-align: center;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
 
-        .menu-link {
-            display: block;
-            background-color: #342617;
-            color: #e7d1a6;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 7px 10px;
-            margin-bottom: 5px;
-            border: 1px solid #4e3827;
-            border-radius: 4px;
-            transition: background-color 0.2s ease;
-            text-align: center;
-        }
+    .menu-link {
+        display: block;
+        background-color: #342617;
+        color: #e7d1a6;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 7px 10px;
+        margin-bottom: 5px;
+        border: 1px solid #4e3827;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        text-align: center;
+    }
 
-        .menu-link:hover {
-            background-color: #463522;
-            color: #fff1cb;
-            border-color: #6a5238;
-        }
+    .menu-link:hover {
+        background-color: #463522;
+        color: #fff1cb;
+        border-color: #6a5238;
+    }
 
-        .content-area {
-            padding: 18px;
-            vertical-align: top;
-            background-color: #291f14;
-            color: #f3e4cd;
-            border-left: 3px solid #4e3927;
-            border-right: 3px solid #4e3927;
-            height: 100%;
-            min-height: 100%;
-        }
+    .content-area {
+        padding: 18px;
+        vertical-align: top;
+        background-color: #291f14;
+        color: #f3e4cd;
+        border-left: 3px solid #4e3927;
+        border-right: 3px solid #4e3927;
+        height: 100%;
+        min-height: 100%;
+    }
 
-        .news-item {
-            background-color: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 10px;
-            margin-bottom: 12px;
-            border-radius: 4px;
-        }
+    .news-item {
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 10px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+    }
 
-        .news-date {
-            font-size: 11px;
-            color: #c6b396;
-            margin-bottom: 5px;
-        }
+    .news-date {
+        font-size: 11px;
+        color: #c6b396;
+        margin-bottom: 5px;
+    }
 
-        .footer {
-            background-color: #21180f;
-            color: #b7a37d;
-            font-size: 10px;
-            text-align: center;
-            padding: 10px;
-            border-top: 2px solid #4c3826;
-        }
+    .footer {
+        background-color: #21180f;
+        color: #b7a37d;
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid #4c3826;
+    }
     </style>
 </head>
 
@@ -304,6 +304,7 @@
                     $realOnline = \Illuminate\Support\Facades\DB::table('users')
                     ->where('last_action_at', '>=', now()->subMinutes(5))
                     ->count();
+
                     @endphp
                     • Players Online: <font color="#00ff00"><b>{{ $realOnline }}</b></font><br>
                     • Accounts Total: <span style="color:#fff;">{{ number_format($totalAccounts) }}</span><br>
@@ -331,33 +332,33 @@
 
     <!-- JavaScript Countdown Chrono Tick Runner Loop -->
     <script type="text/javascript">
-        (function() {
-            var displayElement = document.getElementById('tick-clock');
-            if (!displayElement) return;
+    (function() {
+        var displayElement = document.getElementById('tick-clock');
+        if (!displayElement) return;
 
-            function updateClock() {
-                var now = new Date();
-                var minutes = now.getMinutes();
-                var seconds = now.getSeconds();
+        function updateClock() {
+            var now = new Date();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
 
-                var remMin = 4 - (minutes % 5);
-                var remSec = 59 - seconds;
+            var remMin = 4 - (minutes % 5);
+            var remSec = 59 - seconds;
 
-                var padMinutes = remMin < 10 ? "0" + remMin : remMin;
-                var padSeconds = remSec < 10 ? "0" + remSec : remSec;
+            var padMinutes = remMin < 10 ? "0" + remMin : remMin;
+            var padSeconds = remSec < 10 ? "0" + remSec : remSec;
 
-                displayElement.innerHTML = padMinutes + ":" + padSeconds;
+            displayElement.innerHTML = padMinutes + ":" + padSeconds;
 
-                if (remMin === 0 && remSec === 0) {
-                    setTimeout(function() {
-                        window.location.reload(true);
-                    }, 1000);
-                }
+            if (remMin === 0 && remSec === 0) {
+                setTimeout(function() {
+                    window.location.reload(true);
+                }, 1000);
             }
+        }
 
-            updateClock();
-            setInterval(updateClock, 1000);
-        })();
+        updateClock();
+        setInterval(updateClock, 1000);
+    })();
     </script>
 
 </body>

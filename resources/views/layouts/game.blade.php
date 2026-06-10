@@ -5,141 +5,141 @@
     <meta charset="UTF-8">
     <title>@yield('title', 'World of Arfet')</title>
     <style>
-    body {
-        background-color: #120f08;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        background-size: 100% 4px;
-        color: #efd9b9;
-        font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        font-size: 13px;
-        margin: 0;
-        padding: 18px;
-    }
+        body {
+            background-color: #120f08;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 4px;
+            color: #efd9b9;
+            font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            font-size: 13px;
+            margin: 0;
+            padding: 18px;
+        }
 
-    .main-table {
-        width: 1020px;
-        margin: 0 auto;
-        min-height: calc(100vh - 40px);
-        background-color: #2f2417;
-        border: 4px solid #5a3e23;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    }
+        .main-table {
+            width: 1020px;
+            margin: 0 auto;
+            min-height: calc(100vh - 40px);
+            background-color: #2f2417;
+            border: 4px solid #5a3e23;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
 
-    .mini-sidebar,
-    .sidebar,
-    .stats-sidebar {
-        background-color: #2b1f13;
-        padding: 12px;
-        vertical-align: top;
-        border: 2px solid #4d371f;
-        height: 100%;
-    }
+        .mini-sidebar,
+        .sidebar,
+        .stats-sidebar {
+            background-color: #2b1f13;
+            padding: 12px;
+            vertical-align: top;
+            border: 2px solid #4d371f;
+            height: 100%;
+        }
 
-    .mini-sidebar {
-        width: 140px;
-        border-right-width: 4px;
-        border-right-color: #392a17;
-        background-color: #241a0f;
-    }
+        .mini-sidebar {
+            width: 140px;
+            border-right-width: 4px;
+            border-right-color: #392a17;
+            background-color: #241a0f;
+        }
 
-    .sidebar {
-        width: 170px;
-        border-right-width: 4px;
-        border-right-color: #392a17;
-    }
+        .sidebar {
+            width: 170px;
+            border-right-width: 4px;
+            border-right-color: #392a17;
+        }
 
-    .stats-sidebar {
-        width: 230px;
-        border-left-width: 4px;
-        border-left-color: #392a17;
-    }
+        .stats-sidebar {
+            width: 230px;
+            border-left-width: 4px;
+            border-left-color: #392a17;
+        }
 
-    .box-title {
-        background: linear-gradient(180deg, #5b3c1d 0%, #371f0d 100%);
-        color: #f5d68f;
-        font-weight: bold;
-        font-size: 11px;
-        letter-spacing: 1px;
-        padding: 6px 8px;
-        border: 1px solid #7a5b33;
-        text-align: center;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
-    }
+        .box-title {
+            background: linear-gradient(180deg, #5b3c1d 0%, #371f0d 100%);
+            color: #f5d68f;
+            font-weight: bold;
+            font-size: 11px;
+            letter-spacing: 1px;
+            padding: 6px 8px;
+            border: 1px solid #7a5b33;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        }
 
-    .menu-link {
-        display: block;
-        background-color: #302318;
-        color: #e7d1a6;
-        text-decoration: none;
-        padding: 8px 10px;
-        margin-bottom: 5px;
-        border: 1px solid #4f3b29;
-        border-radius: 4px;
-        transition: background-color 0.2s ease, color 0.2s ease;
-    }
+        .menu-link {
+            display: block;
+            background-color: #302318;
+            color: #e7d1a6;
+            text-decoration: none;
+            padding: 8px 10px;
+            margin-bottom: 5px;
+            border: 1px solid #4f3b29;
+            border-radius: 4px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
 
-    .menu-link:hover {
-        background-color: #453220;
-        color: #ffebc6;
-        border-color: #6e5439;
-    }
+        .menu-link:hover {
+            background-color: #453220;
+            color: #ffebc6;
+            border-color: #6e5439;
+        }
 
-    .content-area {
-        padding: 18px;
-        vertical-align: top;
-        background-color: #291f14;
-        border-left: 2px solid #4a3826;
-        border-right: 2px solid #4a3826;
-        color: #f3e3c7;
-        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
-        height: 100%;
-    }
+        .content-area {
+            padding: 18px;
+            vertical-align: top;
+            background-color: #291f14;
+            border-left: 2px solid #4a3826;
+            border-right: 2px solid #4a3826;
+            color: #f3e3c7;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+            height: 100%;
+        }
 
-    .panel-header {
-        font-size: 18px;
-        color: #f2d38e;
-        font-weight: bold;
-        border-bottom: 1px solid #665232;
-        padding-bottom: 5px;
-        margin-top: 0;
-        letter-spacing: 1px;
-    }
+        .panel-header {
+            font-size: 18px;
+            color: #f2d38e;
+            font-weight: bold;
+            border-bottom: 1px solid #665232;
+            padding-bottom: 5px;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
 
-    .stat-line {
-        padding: 6px 4px;
-        border-bottom: 1px dashed rgba(255, 214, 143, 0.24);
-        display: flex;
-        justify-content: space-between;
-        font-size: 12px;
-    }
+        .stat-line {
+            padding: 6px 4px;
+            border-bottom: 1px dashed rgba(255, 214, 143, 0.24);
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
 
-    .stat-val {
-        font-family: "Lucida Console", Monaco, monospace;
-        color: #f7e8c2;
-        font-weight: bold;
-    }
+        .stat-val {
+            font-family: "Lucida Console", Monaco, monospace;
+            color: #f7e8c2;
+            font-weight: bold;
+        }
 
-    .logout-btn {
-        background: none;
-        border: 1px solid #7d5f3d;
-        color: #e8c99d;
-        font-weight: bold;
-        text-align: left;
-        width: 100%;
-        padding: 8px;
-        cursor: pointer;
-        font-family: "Palatino Linotype", Georgia, serif;
-        font-size: 12px;
-        text-transform: uppercase;
-        border-radius: 4px;
-        transition: background-color 0.2s ease;
-    }
+        .logout-btn {
+            background: none;
+            border: 1px solid #7d5f3d;
+            color: #e8c99d;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            padding: 8px;
+            cursor: pointer;
+            font-family: "Palatino Linotype", Georgia, serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
 
-    .logout-btn:hover {
-        background-color: rgba(255, 255, 255, 0.06);
-    }
+        .logout-btn:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+        }
     </style>
     @yield('styles')
 </head>
@@ -201,6 +201,15 @@
                         style="color:#ff33ff;">{{ auth()->user()->nerve }} / 10</span></div>
                 <div class="stat-line"><span>Strength:</span> <span class="stat-val"
                         style="color:#33ffff;">{{ auth()->user()->strength }}</span></div>
+                <div class="stat-line"><span>Level:</span> <span class="stat-val"
+                        style="color:#ffd369;">{{ auth()->user()->level }}</span></div>
+                <div class="stat-line"><span>Experience:</span> <span class="stat-val">
+                        @if (auth()->user()->level >= \App\Models\User::MAX_LEVEL)
+                        MAX
+                        @else
+                        {{ auth()->user()->xp }} / {{ auth()->user()->xpToNextLevel() }}
+                        @endif
+                    </span></div>
 
                 <!-- SERVER METRICS FIXED PANEL -->
                 <div class="box-title" style="margin-top: 20px;">Realm Status</div>
@@ -224,33 +233,33 @@
 
     <!-- JavaScript Countdown Chrono Ticker Engine -->
     <script type="text/javascript">
-    (function() {
-        var displayElement = document.getElementById('tick-clock');
-        if (!displayElement) return;
+        (function() {
+            var displayElement = document.getElementById('tick-clock');
+            if (!displayElement) return;
 
-        function updateClock() {
-            var now = new Date();
-            var minutes = now.getMinutes();
-            var seconds = now.getSeconds();
+            function updateClock() {
+                var now = new Date();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
 
-            var remMin = 4 - (minutes % 5);
-            var remSec = 59 - seconds;
+                var remMin = 4 - (minutes % 5);
+                var remSec = 59 - seconds;
 
-            var padMinutes = remMin < 10 ? "0" + remMin : remMin;
-            var padSeconds = remSec < 10 ? "0" + remSec : remSec;
+                var padMinutes = remMin < 10 ? "0" + remMin : remMin;
+                var padSeconds = remSec < 10 ? "0" + remSec : remSec;
 
-            displayElement.innerHTML = padMinutes + ":" + padSeconds;
+                displayElement.innerHTML = padMinutes + ":" + padSeconds;
 
-            if (remMin === 0 && remSec === 0) {
-                setTimeout(function() {
-                    window.location.reload(true);
-                }, 1000);
+                if (remMin === 0 && remSec === 0) {
+                    setTimeout(function() {
+                        window.location.reload(true);
+                    }, 1000);
+                }
             }
-        }
 
-        updateClock();
-        setInterval(updateClock, 1000);
-    })();
+            updateClock();
+            setInterval(updateClock, 1000);
+        })();
     </script>
 
 </body>

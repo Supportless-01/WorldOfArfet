@@ -11,12 +11,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-#[Fillable(['name', 'email', 'password', 'life'])]
+#[Fillable(['name', 'email', 'password', 'life', 'energy', 'money', 'nerve', 'strength', 'level', 'xp'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
+
+    public const MAX_LEVEL = 100;
 
     /**
      * Get the attributes that should be cast.
@@ -29,6 +31,13 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
             'last_action_at' => 'datetime',
+            'energy' => 'integer',
+            'money' => 'integer',
+            'nerve' => 'integer',
+            'strength' => 'integer',
+            'life' => 'integer',
+            'level' => 'integer',
+            'xp' => 'integer',
         ];
     }
 
@@ -58,6 +67,38 @@ class User extends Authenticatable
         $this->energy = min(100, $this->energy + 5 * $ticks);
         $this->nerve = min(10, $this->nerve + 1 * $ticks);
         $this->last_action_at = $now;
+        $this->save();
+    }
+
+    public function xpToNextLevel(): int
+    {
+        if ($this->level >= self::MAX_LEVEL) {
+            return 0;
+        }
+
+        return (int) max(
+            150,
+            100 + $this->level * 12 + ($this->level ** 2) * 10
+        );
+    }
+
+    public function gainXp(int $amount): void
+    {
+        if ($this->level >= self::MAX_LEVEL || $amount <= 0) {
+            return;
+        }
+
+        $this->xp += $amount;
+
+        while ($this->level < self::MAX_LEVEL && $this->xp >= $threshold = $this->xpToNextLevel()) {
+            $this->xp -= $threshold;
+            $this->level++;
+        }
+
+        if ($this->level >= self::MAX_LEVEL) {
+            $this->xp = 0;
+        }
+
         $this->save();
     }
 

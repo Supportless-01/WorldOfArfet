@@ -38,10 +38,12 @@ class CrimesController extends Controller
         if ($diceRoll <= 65) {
             // Success! Generate a random cash payout value
             $cashReward = rand(45, 120);
-            $user->money = $user->money + $cashReward;
-            $user->save();
+            $xpGain = rand(8, 16);
 
-            return redirect()->back()->with('success', "SUCCESSFUL HEIST: You slipped a gilded purse from a distracted merchant in the Thieves' Quarter. Gained +$" . number_format($cashReward) . " gold!");
+            $user->money = $user->money + $cashReward;
+            $user->gainXp($xpGain);
+
+            return redirect()->back()->with('success', "SUCCESSFUL HEIST: You slipped a gilded purse from a distracted merchant in the Thieves' Quarter. Gained +$" . number_format($cashReward) . " gold and +{$xpGain} XP toward your next level!");
         } else {
             // Failure logic
             $damage = rand(5, 15);
